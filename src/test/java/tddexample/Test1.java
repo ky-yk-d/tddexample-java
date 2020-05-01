@@ -2,8 +2,7 @@ package tddexample;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Test1 {
 
@@ -22,5 +21,13 @@ public class Test1 {
         pc.setCategory(electronic);
         assertTrue(electronic.contains(pc));
     }
+
+    @Test
+    public void test3() {
+        Product pc = new Product();
+        Category electronic = new Category();
+        assertFalse(electronic.contains(pc));
+    }
+
 
 }
