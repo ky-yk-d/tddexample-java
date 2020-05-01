@@ -1,12 +1,18 @@
 package tddexample;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Category {
 
-    public boolean contains(Product pc) {
-        if (pc.getCategory() == null) {
-            return false;
-        }
-        return true;
+    private List<Product> products = new ArrayList<>();
+
+    public boolean contains(Product aProduct) {
+        return products.contains(aProduct);
+    }
+
+    public void addProduct(Product aProduct) {
+        products.add(aProduct);
     }
 
 }

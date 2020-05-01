@@ -2,13 +2,15 @@ package tddexample;
 
 public class Product {
 
-    private Object category;
+    private Category category;
 
-    public void setCategory(Object aCategory) {
+    public void setCategory(Category aCategory) {
         category = aCategory;
+        aCategory.addProduct(this);
     }
 
-    public Object getCategory() {
+    public Category getCategory() {
         return category;
     }
+
 }
