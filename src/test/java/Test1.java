@@ -8,7 +8,7 @@ public class Test1 {
     @Test
     void test1() {
         Product pc = new Product();
-        Object electronic = new Object();
+        Category electronic = new Category();
         pc.setCategory(electronic);
         assertEquals(electronic, pc.getCategory());
     }

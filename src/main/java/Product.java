@@ -1,13 +1,14 @@
 public class Product {
 
-    private Object category;
+    private Category category;
 
-    public Object getCategory() {
+    public Category getCategory() {
         return this.category;
     }
 
-    public void setCategory(Object aCategory) {
+    public void setCategory(Category aCategory) {
         this.category = aCategory;
+        aCategory.add(this);
     }
 
 }

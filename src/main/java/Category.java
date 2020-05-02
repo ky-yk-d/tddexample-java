@@ -1,5 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Category {
-    public boolean contains(Product pc) {
-        return true;
+
+    private List<Product> products = new ArrayList<>();
+
+    public boolean contains(Product aProduct) {
+        return this.products.contains(aProduct);
     }
+
+    public void add(Product aProduct) {
+        this.products.add(aProduct);
+    }
+
 }
